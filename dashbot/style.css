@@ -6,6 +6,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+.rgt {
+  width: 100%;
+  position: fixed;
+  transform: translate(734px, -292px);
+}
 .sidebar {
   position: fixed;
   height: 100%;
