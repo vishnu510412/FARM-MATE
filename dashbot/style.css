@@ -7,11 +7,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-.rgt {
+.textup {
+  float: right;
+  transform: translate(697px, -516px);
   width: 100%;
-  position: fixed;
-  transform: translate(734px, -292px);
 }
+body {
+  overflow: hidden;
+}
+
 .sidebar {
   position: fixed;
   height: 100%;
