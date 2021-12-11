@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  float: right;
+  background-color: #5be3b2;
+  width: 920px;
+  height: 1320px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: rgb(245, 247, 235);
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea,
+input {
+  font-size: 15px;
+}
+.img_logo {
+  transform: translate(238px, 149px);
+}
+
+select {
+  height: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 80%;
+  margin-top: 80px;
+}
+.sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+}
+input {
+  height: 2rem;
+}
+.sub {
+  background-color: #5be3b2;
+  width: 100%;
+  margin-top: 20px;
+  padding: 5px;
+  border: none;
+}
+@media (max-width: 738px) {
+  .cnt {
+    display: flex;
+    flex-direction: column;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}

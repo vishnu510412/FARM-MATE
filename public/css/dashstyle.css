@@ -7,13 +7,29 @@
   font-family: "Poppins", sans-serif;
 }
 
-.textup {
-  float: right;
-  transform: translate(697px, -516px);
-  width: 100%;
+.cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.fl {
+  padding-left: 92px;
 }
 body {
   overflow-x: hidden;
+}
+.img_far {
+  width: 70px;
+  height: 70px;
+}
+.text-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.mainh {
+  transform: translate(495px, 35px);
 }
 
 .sidebar {
@@ -69,6 +85,7 @@ body {
 h1 {
   text-align: center;
 }
+
 .head {
   padding-top: 80px;
 }
@@ -122,13 +139,16 @@ nav .profile-details .admin_name {
   padding: 0 20px;
   margin-bottom: 26px;
 }
+
 .overview-boxes .box {
   display: flex;
+  gap: 30px;
   align-items: center;
   justify-content: center;
   width: calc(100% / 4 - 15px);
   background: #fff;
-  padding: 15px 14px;
+  padding: 20px;
+  text-align: center;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -143,6 +163,30 @@ nav .profile-details .admin_name {
   font-weight: 500;
 }
 
+input[type="file"] {
+  background: url(/public/images/add.png);
+  /* width of image */
+  height: 2.2rem; /* height of image */
+  width: 2rem;
+  border: 0;
+  background-repeat: no-repeat;
+  object-fit: fill;
+
+  background-position: center;
+}
+
+.bbtn {
+  background-color: teal;
+  padding: 12px;
+  transform: translate(128px, 0px);
+  border-radius: 5px;
+  color: #97e7ca;
+  box-shadow: 5px 5px 5px lightblue;
+}
+.bbtn:hover {
+  background-color: rgb(25, 230, 151);
+  color: yellow;
+}
 /* left box */
 
 /* Right box */
@@ -159,6 +203,7 @@ nav .profile-details .admin_name {
     width: calc(100% - 60px);
     left: 60px;
   }
+
   .sidebar.active ~ .home-section {
     /* width: calc(100% - 220px); */
     overflow: hidden;

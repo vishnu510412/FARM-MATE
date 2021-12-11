@@ -2,36 +2,34 @@
   <head>
     <meta charset="UTF-8" />
     <title>Dashboard </title>
-    <link rel="stylesheet" href="/Farm Mate/public/css/dashstyle.css" />
-    <!-- Boxicons CDN Link -->
+    <link rel="stylesheet" href="/public/css/dashstyle.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       
       rel="stylesheet"
     />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="sidebar">
       <div class="logo-details">
-        <i class="bx bxl-c-plus-plus"></i>
-        <span class="logo_name">Fart mate</span>
+        <a href="/views/customer.html">
+<img src="/public/images/Farmly.png" alt="" class="img_far">
+        </a>
+        <span class="logo_name">Farm Mate</span>
       </div>
       <ul class="nav-links">
         <li>
-          <a href="#" class="active">
+          <a href="#" >
             <i class="bx bx-grid-alt"></i>
             <span class="links_name">Home</span>
           </a>
         </li>
+     
         <li>
-          <a href="#">
-            <i class="bx bx-box"></i>
-            <span class="links_name">Revenue</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          <a href="#" class="active">
             <i class="bx bx-list-ul"></i>
             <span class="links_name">Uploads</span>
           </a>
@@ -41,156 +39,58 @@
           <a href="#">
             <i class="bx bx-log-out"></i>
             <span class="links_name">Log out</span>
-          </a>
+          </a>-   
         </li>
       </ul>
     </div>
-    <section class="home-section">
-      <!-- <nav>
-        <div class="sidebar-button">
-          <i class="bx bx-menu sidebarBtn"></i>
-          <span class="dashboard">Dashboard</span>
-        </div>
-        <div class="search-box">
-          <input type="text" placeholder="Search..." />
-          <i class="bx bx-search"></i>
-        </div>
-        <div class="profile-details">
-          <img src="some" alt="pics">
-          <span class="admin_name">FARM MATE</span>
-          <i class="bx bx-chevron-down"></i>
-        </div>
-      </nav> -->
+    
+    
+<section class="home-section">
+
 <div class="head">
 
-  <h1>Welcome , XXX</h1>
+  <h1>Welcome , username</h1>
 </div>
 
 <div class="mainh">
 
-  <div class="home-content">
-    <div class="overview-boxes">
-      <div class="box">
-        <div class="right-side">
-          <div class="box-topic">Upload Photo</div>
-          <div class="number">img</div>
-          <div class="indicator">
+ 
+    <div class="home-content">
+        <div class="overview-boxes">
+          <div class="box">
             
-            <span class="text">.</span>
+              <form action="" class="cnt">
+
+<span>Upload your product pic</span>
+          <input type="file"  class="fl">
+              </form>
+           
           </div>
-        </div>
         
-      </div>
-    </div>
-  </div>
-
-
-
-
-</div>
-        
+          </div>
+     
+        </div>   
 
         <div class="home-content">
           <div class="overview-boxes">
             <div class="box">
-              <div class="right-side">
-                <div class="box-topic">
-                  <img src="" alt="">
-                </div>
-                <!-- <div class="number">some head</div> -->
-                <input type="file">
-                <span>Upload the product</span>
-                <div class="indicator">
-                  
-                  <span class="text">.</span>
-                </div>
-              </div>
+             
+                <form action="" class="text-edit">
+
+                  <input type="text" placeholder="Product Name">
+                  <input type="text" placeholder="Product Price">
+                  <input type="text" placeholder="Phone Number">
+                </form>
+
              
             </div>
+          
             </div>
-  
+          
+            <button type='submit' class="bbtn">Submit</button>
           </div>
-
-<div class="textup">
-<br><br><br><br><br><br><br>
-<br><br><br><br><br><br>
-  <div class="home-content">
-    <div class="overview-boxes">
-      <div class="box">
-        <div class="right-side">
-          <div class="box-topic">
-            <img src="" alt="">
-          </div>
-          <!-- <div class="number">some head</div> -->
-          <form action="" name="product">
-
-            <input type="text">
-          </form>
-          <span>Enter your product name</span>
-          <div class="indicator">
-            
-            <span class="text">.</span>
-          </div>
+         
         </div>
-        
-      </div>
-    </div>
-    
-  </div>
-
-
-  <div class="home-content">
-    <div class="overview-boxes">
-      <div class="box">
-        <div class="right-side">
-          <div class="box-topic">
-            <img src="" alt="">
-          </div>
-          <!-- <div class="number">some head</div> -->
-          <form action="" name="price">
-
-            <input type="text">
-          </form>
-          <span>Enter Price</span>
-          <div class="indicator">
-            
-            <span class="text">.</span>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-  </div>
-
-  <div class="home-content">
-    <div class="overview-boxes">
-      <div class="box">
-        <div class="right-side">
-          <div class="box-topic">
-            <img src="" alt="">
-          </div>
-          <!-- <div class="number">some head</div> -->
-          <form action="" name="contact">
-
-            <input type="text">
-          </form>
-          <span>Enter your contact details</span>
-          <div class="indicator">
-            
-            <span class="text">.</span>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-  </div>
-  <button>Submit</button>
-  
-</div>
-  
-  
   
 </section>
   </body>
