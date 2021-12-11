@@ -1,0 +1,20 @@
+<form action="/login" method="post">
+    email:<input type="text" name="email" >
+    password:<input type="text" name="password">
+    <button type="submit">submit</button>
+</form>
+<div id="demo"></div>
+<script>
+    if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(showPosition);
+} else {
+  document.getElementById("demo").innerHTML =
+  "Geolocation is not supported by this browser.";
+}
+
+function showPosition(position) {
+  document.getElementById("demo").innerHTML =
+  "Latitude: " + position.coords.latitude +
+  "Longitude: " + position.coords.longitude;
+}
+</script>

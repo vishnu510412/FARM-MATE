@@ -1,0 +1,48 @@
+
+    <form action="/signup" method="post">
+        <!-- name --><br>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input name='name' type="text"></td>
+            </tr>
+            
+            <tr>
+                <td>Number</td>
+                <td><input name='number' type="text"></td>
+            </tr>
+            <tr>
+                <td>who are you</td>
+                <td>
+                    <select name="id">
+                        <option value="farmer">farmer</option>
+                        <option value="customer">customer</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>
+                    <select id="select-state" name="state" id="state" onchange="run(this.value)">
+                        <% states.forEach((e)=>{%>
+                          <option value="<%= e %>"><%= e %></option>
+                        <% }) %>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>
+                    <select name="dst" id="dst">
+                        <option value="none">None</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button type="submit">Sign up</button>
+                </td>
+            </tr>
+            
+        </table>
+    </form>

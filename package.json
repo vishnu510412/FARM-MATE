@@ -1,0 +1,18 @@
+{
+  "name": "farm_mate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index",
+    "dev": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fast-two-sms": "^3.0.0",
+    "mongoose": "^6.1.1"
+  }
+}
