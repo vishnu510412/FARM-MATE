@@ -16,15 +16,16 @@
     <link rel="stylesheet" href="/public/css/style.css" />
 
     <!-- custom javascript link  -->
-    <script src="/Farm Mate/public/js/cusscript.js" defer></script>
+    <script src="/public/js/cusscript.js" defer></script>
   </head>
   <body>
     <!-- header section starts  -->
 
     <header class="header">
       <a href="#" class="logo">
-        <i class="fas"><img src="logo.jpeg" class="img-logo" alt="" /></i> Farm
-        Mate
+        <i class="fas"
+          ><img src="/public/images/farmmate.svg" class="img-logo" alt="" /></i
+        ><span class="prg_title"> Farm Mate </span>
       </a>
 
       <nav class="navbar">
@@ -52,6 +53,41 @@
         />
         <label for="search-box" class="fas fa-search"></label>
       </form>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="img/cart-img-1.png" />
+          <div class="content">
+            <h3>watermelon</h3>
+            <span class="price">$5.99/-</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="img/cart-img-2.png" />
+          <div class="content">
+            <h3>onion</h3>
+            <span class="price">$5.99/-</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="img/cart-img-3.png" />
+          <div class="content">
+            <h3>chicken</h3>
+            <span class="price">$5.99/-</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+
+        <div class="total">total : $17.97/-</div>
+        <a href="#" class="btn">checkout</a>
+      </div>
     </header>
 
     <!-- header section ends -->
@@ -78,9 +114,10 @@
       <div
         class="slide"
         style="
-          background: url(logo.jpeg) no-repeat;
-          background-size: 580px;
+          background: url(/public/images/homeimg.png) no-repeat;
+          background-size: cover;
           background-position: center;
+          height: 500px;
         "
       >
         <!-- <div class="content">
@@ -100,7 +137,7 @@
 
     <section class="about" id="about">
       <div class="image">
-        <img src="images/about-img.png" alt="" />
+        <img src="/public/images/about.png" alt="" />
       </div>
 
       <div class="content">
@@ -113,20 +150,6 @@
             magnam adipisci quo illo?
           </p>
           <a href="#" class="btn">read more</a>
-        </div>
-        <div class="icons-container">
-          <div class="icons">
-            <i class="fas"></i>
-            <p>Some logo</p>
-          </div>
-          <div class="icons">
-            <i class="fas"></i>
-            <p>logo 2</p>
-          </div>
-          <div class="icons">
-            <i class="fas"></i>
-            <p>logo4</p>
-          </div>
         </div>
       </div>
     </section>
@@ -141,7 +164,7 @@
       <div class="box-container">
         <div class="box">
           <div class="image">
-            <img src="images/product-1.png" alt="" />
+            <img src="/public/images/prd.png" alt="" />
             <div class="icons">
               <a href="#" class="fas fa-eye"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -157,7 +180,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="images/product-2.png" alt="" />
+            <img src="/public/images/prd1.png" alt="" />
             <div class="icons">
               <a href="#" class="fas fa-eye"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -173,7 +196,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="images/product-3.png" alt="" />
+            <img src="/public/images/prd2.png" alt="" />
             <div class="icons">
               <a href="#" class="fas fa-eye"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -189,7 +212,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="images/product-4.png" alt="" />
+            <img src="/public/images/prd3.png" alt="" />
             <div class="icons">
               <a href="#" class="fas fa-eye"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -205,7 +228,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="images/product-5.png" alt="" />
+            <img src="/public/images/prd4.png" alt="" />
             <div class="icons">
               <a href="#" class="fas fa-eye"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -221,7 +244,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="images/product-6.png" alt="" />
+            <img src="/public/images/prd.png" alt="" />
             <div class="icons">
               <a href="#" class="fas fa-eye"></a>
               <a href="#" class="fas fa-heart"></a>
@@ -249,7 +272,17 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
           numquam.
         </p>
-        <a href="#" class="btn">shop now7</a>
+        <a href="#" class="btn">shop now</a>
+      </div>
+
+      <div class="content">
+        <span>Pre-Booking</span>
+        <h3>Assure your sales before harvesting</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          numquam.
+        </p>
+        <a href="#" class="btn">book now</a>
       </div>
     </section>
 
@@ -262,7 +295,7 @@
 
       <div class="box-container">
         <div class="box">
-          <img src="images/gallery-img-1.jpg" alt="" />
+          <img src="/public/images/new.png" alt="" />
           <div class="content">
             <h3>farm mate</h3>
             <p>
@@ -274,7 +307,7 @@
         </div>
 
         <div class="box">
-          <img src="images/gallery-img-2.jpg" alt="" />
+          <img src="/public/images/new1.png" alt="" />
           <div class="content">
             <h3>farm mate</h3>
             <p>
@@ -286,7 +319,7 @@
         </div>
 
         <div class="box">
-          <img src="images/gallery-img-3.jpg" alt="" />
+          <img src="/public/images/new2.png" alt="" />
           <div class="content">
             <h3>farm mate</h3>
             <p>
@@ -298,7 +331,7 @@
         </div>
 
         <div class="box">
-          <img src="images/gallery-img-4.jpg" alt="" />
+          <img src="/public/images/new3.png" alt="" />
           <div class="content">
             <h3>farm mate</h3>
             <p>
@@ -310,7 +343,7 @@
         </div>
 
         <div class="box">
-          <img src="images/gallery-img-5.jpg" alt="" />
+          <img src="/public/images/new4.png" alt="" />
           <div class="content">
             <h3>farm mate</h3>
             <p>
@@ -322,7 +355,7 @@
         </div>
 
         <div class="box">
-          <img src="images/gallery-img-6.jpg" alt="" />
+          <img src="/public/images/new6.png" alt="" />
           <div class="content">
             <h3>farm mate</h3>
             <p>
@@ -349,7 +382,7 @@
       <div class="box-container">
         <div class="box">
           <div class="image">
-            <img src="images/blog-1.jpg" alt="" />
+            <img src="/public/images/blog1.png" alt="" />
           </div>
           <div class="content">
             <div class="date">
@@ -368,7 +401,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="images/blog-2.jpg" alt="" />
+            <img src="/public/images/blog2.png" alt="" />
           </div>
           <div class="content">
             <div class="date">
@@ -387,7 +420,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="images/blog-3.jpg" alt="" />
+            <img src="/public/images/blog3.png" alt="" />
           </div>
           <div class="content">
             <div class="date">
